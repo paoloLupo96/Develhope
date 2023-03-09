@@ -30,63 +30,30 @@
         maxlength="12" required>
     </fieldset>
 
-  <br>
+    <br>
 
     <fieldset>
       <legend>Scegli il tuo piano</legend>
-      <table>
-        <thead>
-          <tr>
-            <th>
-              <label for="gratis"></label>
-              Gratis
-              <input type="radio" name="plan" id="gratis">
-            </th>
-            <th>
-              <label for="essential"></label>
-              Essential
-              <input type="radio" name="plan" id="essential">
-            </th>
-            <th>
-              <label for="extra"></label>
-              Extra
-              <input type="radio" name="plan" id="extra">
-            </th>
-            <th>
-              <label for="premium"></label>
-              Premium
-              <input type="radio" name="plan" id="premium">
-            </th>
-            <th>
-              <label for="pro"></label>
-              Pro
-              <input type="radio" name="plan" id="pro">
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td>25$</td>
-            <td>50$</td>
-            <td>100$</td>
-            <td>200$</td>
-          </tr>
-        </tbody>
-      </table>
+      <label for="form-plan">Piani</label>
+      <select id="form-plan" name="plan" required>
+        <option value="0">Gratis</option>
+        <optgroup label="Annuale">
+          <option value="25">25$</option>
+          <option value="50">50$</option>
+          <option value="100">100$</option>
+        </optgroup>
+      </select>
+      <label for="form-pro">PRO</label>
+      <input id="form-pro" name="pro" type="checkbox" />
     </fieldset>
-
-<!-- Nonostante la consegna suggerisse l'utilizzo del comando <input type="checkbox">, per la selezione dei piani,
-    ho ritenuto più logico utilizzare il comando <input type="radio"> 
-    immaginando che un ipotetico utente non avrebbe dovuto poter' abbonarsi a più piani, ma ad uno solo di esso." -->
 
     <br>
 
     <fieldset>
       <legend>Dati pagamento</legend>
-      <label for="credit_card">Carta di credito</label>
-      <input type="text" id="credit_card" name="credit_card" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
-        maxlength="19" placeholder="Numero carta" required>
+      <label for="cc">Carta di credito</label>
+      <input type="text" id="cc" name="cc" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" maxlength="19"
+        placeholder="Numero carta" required>
       <label for="cvc">cvc</label>
       <input type="text" name="cvc" id="cvc" pattern="[0-9]{3}" maxlength="3" placeholder="123" required>
       <label for="exp_date">Data di scadenza</label>
@@ -94,6 +61,8 @@
       <label for="billing_address">Indirizzo di fatturazione</label>
       <input type="text" name="billing_address" id="billing_address" placeholder="Scrivi qui" required>
     </fieldset>
+
+
   </form>
 </body>
 
