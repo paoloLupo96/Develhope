@@ -11,10 +11,8 @@
 
 <body>
   <fieldset>
-  <h1>
-    <label for="numbers">Numeri (0-100)</label>
-    <input type="number" name="numbers" min="0" max="100">
-  </h1>
+    <label for="numbers">Numeri</label>
+    <input type="number" name="numbers" min="0" max="100" step="2" value="0">
   <div>
     <button type="button" disabled>Premi qui</button>
   </div>
@@ -28,7 +26,3 @@
 </body>
 
 </html>
-
-<!-- Ho raggruppato i tag in un <fieldset>, ricontrollato che non mancasse nulla, ma ho il sospetto che non sia ancora corretto. 
-  Non credo mi sia chiara questa parte della consegna:"the input type number should have the focus on the opening of the page".
-Ho evidenziato l'input numerico con con <h1> affinchè <input type= number> abbia il "focus on the opening of the page", fammi sapere se corretto. -->
