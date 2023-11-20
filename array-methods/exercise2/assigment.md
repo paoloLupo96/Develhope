@@ -1,0 +1,1 @@
+-Implementare la funzione firstUncompletedNote che, dato un array di note, restituisce la prima nota non completata. Una nota viene considerata completata se tutti i todos presenti hanno la key done impostata a true.
