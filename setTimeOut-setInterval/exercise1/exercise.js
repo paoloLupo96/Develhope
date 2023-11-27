@@ -8,5 +8,5 @@ function visualizzaOrologio() {
 }
 
 setInterval(() => {
-    console.log(visualizzaOrologio)
+    visualizzaOrologio()
 }, 1000);
