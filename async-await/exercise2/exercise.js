@@ -28,5 +28,4 @@ async function lanciaVeicoloSpaziale() {
   }
 }
 
-// Chiamare la funzione per avviare il processo di lancio del veicolo spaziale
 lanciaVeicoloSpaziale();
