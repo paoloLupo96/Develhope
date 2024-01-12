@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="dati_anagrafici.php" method="post">
+      <fieldset>
+        <legend>Dati Anagrafici e Contatti</legend>
+        <label for="name_surname">Nome e Cognome</label>
+        <input
+          type="text"
+          id="name_surname"
+          name="name_surname"
+          placeholder="Scrivi qui"
+          required
+        />
+        <label for="birthday">Data di nascita</label>
+        <input type="date" id="birthday" name="birthday" required />
+        <label for="email">E-Mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="esempio@dominio.com"
+          required
+        />
+        <label for="pwd">Password:</label>
+        <input
+          type="password"
+          id="pwd"
+          name="pwd"
+          placeholder="Scrivi qui"
+          required
+        />
+        <label for="phone">Numero di telefono (cellulare)</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="123-45-678"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          maxlength="12"
+          required
+        />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Scegli il tuo piano</legend>
+        <label for="form-plan">Piani</label>
+        <select id="form-plan" name="plan" required>
+          <option value="0">Gratis</option>
+          <optgroup label="Annuale">
+            <option value="25">25$</option>
+            <option value="50">50$</option>
+            <option value="100">100$</option>
+          </optgroup>
+        </select>
+        <label for="form-pro">PRO</label>
+        <input id="form-pro" name="pro" type="checkbox" />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Dati pagamento</legend>
+        <label for="cc">Carta di credito</label>
+        <input
+          type="text"
+          id="cc"
+          name="cc"
+          pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+          maxlength="19"
+          placeholder="Numero carta"
+          required
+        />
+        <label for="cvc">cvc</label>
+        <input
+          type="text"
+          name="cvc"
+          id="cvc"
+          pattern="[0-9]{3}"
+          maxlength="3"
+          placeholder="123"
+          required
+        />
+        <label for="exp_date">Data di scadenza</label>
+        <input type="month" name="exp_date" id="exp_date" required />
+        <label for="billing_address">Indirizzo di fatturazione</label>
+        <input
+          type="text"
+          name="billing_address"
+          id="billing_address"
+          placeholder="Scrivi qui"
+          required
+        />
+      </fieldset>
+    </form>
+  </body>
+
+  <br />
+
+  <footer>
+    <input type="reset" value="Reset" />
+    <input type="submit" value="Submit" />
+  </footer>
+</html>
