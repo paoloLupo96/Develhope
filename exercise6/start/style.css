@@ -1,0 +1,94 @@
+html {
+  height: 3000px;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #212529;
+  font-family: sans-serif;
+}
+
+h1,
+ul,
+li,
+input,
+button {
+  display: inline-block;
+  padding: 2px 5px 2px 5px;
+}
+
+h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li:nth-child(2) a {
+  color: #9b9d9f;
+}
+
+li:last-child a {
+  color: #585c5e;
+}
+
+label {
+  color: #9b9d9f;
+  position: relative;
+  left: 10px;
+}
+select {
+  color: #9b9d9f;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: #212529;
+}
+
+button {
+  color: green;
+  background-color: #212529;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
+}
+
+option {
+  background-color: #212529;
+}
+
+.searchbar-container {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  margin: 0px 10px;
+}
+
+input {
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
