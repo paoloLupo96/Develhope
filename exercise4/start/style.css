@@ -1,0 +1,15 @@
+:root {
+  --background-primary-color: #011212;
+  --background-secondary-color: #ff8800;
+}
+
+body {
+  background-color: var(--background-primary-color);
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: var(--background-secondary-color);
+  border-radius: 50px;
+}
