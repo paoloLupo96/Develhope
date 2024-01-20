@@ -1,0 +1,53 @@
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  background: #ecfa2a;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  padding-left: 20px;
+  color: #2b2b2b;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2b2bb2;
+  transition: 0.3s;
+}
+
+/* Centro */
+article {
+  height: 100%;
+  flex: 2 70%;
+  background-color: blueviolet;
+}
+
+article img {
+  height: 100%;
+}
+
+/* Aside */
+
+aside {
+  flex: 1 30%;
+  width: 200px;
+  height: 100%;
+}
+
+aside img {
+  width: 100%;
+  height: 100%;
+}
