@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  background-color: #222529;
+  box-shadow: rgba(98, 98, 98, 0.5) 0px 0px 5px 0px;
+}
+
+a {
+  text-decoration: none;
+  margin: 0px 16px 0px 0px;
+}
+
+.left-navbar {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin: 0px 24px 0px 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.navigation-item {
+  color: #9b9d9f;
+  transition: 0.3s;
+}
+
+.navigation-item-home {
+  color: white;
+}
+
+/*DROPDOWN*/
+
+.dropdown-container {
+  display: none;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #9b9d9f;
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  transform: rotate(180deg);
+  fill: #9b9d9f;
+  cursor: pointer;
+}
+
+.disabled {
+  color: #45484a;
+  margin: 0px 16px 0px 16px;
+}
+
+.right-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar {
+  margin: 0px 4px 0px 0px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.searchbar-btn {
+  margin: 0px 24px 0px 0px;
+  padding: 8px;
+  color: #1b8753;
+  background: none;
+  border: 1px solid #1b8753;
+  border-radius: 6px;
+  border-color: #1b8753;
+}
+
+/*HOVER EFFECT*/
+
+.navigation-item-home:hover,
+.navigation-item:hover,
+.dropdown-btn:hover,
+.dropdown-arrow:hover {
+  color: #1b8753;
+  fill: #1b8753;
+}
+.searchbar-btn:hover {
+  color: white;
+  background-color: #1b8753;
+}
+
+/*HAMBURGER MENU*/
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    align-items: center;
+  }
+
+  .left-navbar {
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .left-navbar,
+  .searchbar,
+  .searchbar-btn {
+    display: none;
+    width: 100%;
+  }
+
+  .menu-toggle:checked + .navbar .left-navbar,
+  .menu-toggle:checked + .navbar .right-navbar {
+    display: flex;
+  }
+}

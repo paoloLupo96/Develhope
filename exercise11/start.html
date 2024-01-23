@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Navbar</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <div class="left-navbar">
+        <h1>Navbar</h1>
+        <a class="navigation-item-home" href="">Home</a>
+        <a class="navigation-item" href="">Link</a>
+        <button class="dropdown-btn">
+          Dropdown
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+            class="dropdown-arrow"
+          >
+            <path d="m280-400 200-200 200 200H280Z" />
+          </svg>
+        </button>
+        <div class="dropdown-container">
+          <ul class="dropdown-ul">
+            <li class="dropdown-item"><a href="">link 1</a></li>
+            <li class="dropdown-item"><a href="">link 2</a></li>
+            <li class="dropdown-item"><a href="">link 3</a></li>
+          </ul>
+        </div>
+        <a href="" class="disabled">Disabled</a>
+      </div>
+      <div class="right-navabar">
+        <input
+          type="search"
+          id="searchbar"
+          class="searchbar"
+          name="searchbar"
+          placeholder="Search"
+        />
+        <button class="searchbar-btn">Search</button>
+      </div>
+    </nav>
+  </body>
+</html>
