@@ -31,12 +31,12 @@
       const form = container.children[0];
 
       let person = {
-        firstName: inputFirstName["value"],
-        lastName: inputLastName["value"],
-        age: inputAge["value"],
+        firstName: inputFirstName.value,
+        lastName: inputLastName.value,
+        age: inputAge.value,
       };
 
-      form.setAttribute("data-person", `${JSON.stringify(person)}`);
+      form.setAttribute("data-person", JSON.stringify(person));
 
       console.log(form);
     </script>
