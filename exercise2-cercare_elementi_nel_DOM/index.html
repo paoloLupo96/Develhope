@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <form>
+        <div>
+          <label>First Name:</label>
+          <input type="text" class="form-input" id="firstName" value="Mario" />
+        </div>
+        <div>
+          <label>Last Name:</label>
+          <input type="text" class="form-input" id="lastName" value="Rossi" />
+        </div>
+        <div>
+          <label>Age:</label>
+          <input type="number" class="form-input" id="age" value="25" />
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const inputFirstName = document.querySelector("#firstName");
+      const inputLastName = document.querySelector("#lastName");
+      const inputAge = document.querySelector("#age");
+      const formContainer = document.getElementById("container");
+      const form = container.children[0];
+
+      let person = {
+        firstName: inputFirstName["value"],
+        lastName: inputLastName["value"],
+        age: inputAge["value"],
+      };
+
+      form.setAttribute("data-person", `${JSON.stringify(person)}`);
+
+      console.log(form);
+    </script>
+  </body>
+</html>
