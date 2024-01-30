@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aragorn's Card</title>
+</head>
+
+<body>
+    <h1 id="pngName"></h1>
+    <hr>
+    <img src="" alt="" width="300" height="400" id="pngImage">
+</body>
+<script>
+    fetch("https://ringsdb.com/api/public/cards/")
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+
+            const h1 = document.querySelector("#pngName");
+            const img = document.querySelector("#pngImage");
+
+            h1.innerText = data[0].name;
+            img.setAttribute("src", `${"http://ringsdb.com/"}${data[0].imagesrc}`);
+        });
+</script>
+
+</html>
